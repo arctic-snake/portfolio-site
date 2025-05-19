@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kartikeya's Portfolio</title>
+  
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
+
+
+</head>
+<body style="background-color: #0b0b0b; color: beige">
+  
+<nav class="navbar navbar-expand-lg px-5 fixed-top shadow-sm" style="background-color: #0b0b0b">
+  <a class="navbar-brand fw-bold" href="#" style="color: beige">Kartikeya</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#about" style="color: beige">👤About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#education" style="color: beige">🎓Education</a></li>
+      <li class="nav-item"><a class="nav-link" href="#work" style="color: beige">💼Work</a></li>
+      <li class="nav-item"><a class="nav-link" href="#skills" style="color: beige">🛠️Skills</a></li>
+      <li class="nav-item"><a class="nav-link" href="#projects" style="color: beige">🚀Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact" style="color: beige">📬Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<!-- Hero --> 
+<section id="hero" class="text">
+  <div class="ms-5">
+    <h1 class="display-4" style="font-weight: 800"> Hi! I'm Kartikeya <img src="images/hand.gif" width="50" /></h1>
+    
+    <p><span class="Intro1" style="font-weight: 600"></span><span class="cursor">&nbsp;</span></p>
+    
+    <p><span class="Intro2" style="font-weight: 600"></span><span class="cursor">&nbsp;</span></p>
+    <div class="scroll-down-indicator"></div>
+  </div>
+</section>
+
+<div class="container mt-3">
+
+<!-- Introduction --> 
+<section id="about" class="mb-5">
+  <div style="line-height: 2px">
+    <p class="text-center mb-4" style="font-size: 20px; font-weight: 400;">INTRODUCTION</p>
+    <h1 class="text-center mb-4 py-0" style="font-weight: 800;">Overview</h1>
+  </div>
+
+  <!-- Bottom: Image + Bullet Points -->
+  <div class="row align-items-center">
+    <!-- Image -->
+    <div class="col-md-4 text-center mb-4 mb-md-0">
+      <img src="images/profile.png" alt="Kartikeya" class="img-fluid rounded-circle" style="max-width: 300px;">
+      <br>
+      <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+        <a href="https://github.com/arctic-snake" target="_blank" class="btn btn-outline-light btn-sm" style="border-radius: 25px; min-width: 100px;">
+          <i class="fab fa-github me-1"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/kartikeya--gupta/" target="_blank" class="btn btn-outline-primary btn-sm" style="border-radius: 25px; min-width: 100px;">
+          <i class="fab fa-linkedin me-1"></i> LinkedIn
+        </a>
+        <a href="https://drive.google.com/file/d/1Td8-vu23SAVLdfBsCcvglZcA6eFRYLjt/view?usp=sharing" target="_blank" class="btn btn-outline-success btn-sm" style="border-radius: 25px; min-width: 100px;">
+          <i class="fas fa-file-alt me-1"></i> Resume
+        </a>
+      </div>
+    </div>
+
+    <!-- Bullet Points -->
+    <div class="col-md-8">
+      <ul class="list-unstyled">
+        <li class="mb-3 ms-5">🛠️ Creative Technologist with a Builder Mindset: I enjoy building interactive and impactful applications—from 3D modeling tools in Unity to data-driven visualizations—combining technical precision with user-focused design.</li>
+        <li class="mb-3 ms-5">🧠 Curious and Self-Taught Explorer: I actively seek out challenges that push my learning boundaries—whether it's diving into computational finance, machine learning, or AR-based interactions.</li>
+        <li class="mb-3 ms-5">🧩 Strong Foundations in Problem Solving: My approach is structured, analytical, and hands-on. I enjoy breaking down complex ideas into modular, buildable steps and iterating rapidly.</li>
+        <li class="mb-3 ms-5">🎨 Design-Inspired Developer: I pay close attention to how things look and feel. From UI animations to clean layouts, I strive to create intuitive, aesthetic experiences.</li>
+        <li class="mb-3 ms-5">📊 Blending Finance + Tech: I’m drawn to domains where logic, systems, and creativity intersect—like building financial models, simulating scenarios, or creating smart visual tools for insight.</li>
+        <li class="mb-3 ms-5">✍️ Focused on Craft & Communication: Whether writing clean code, thoughtful blog posts, or refining UI flows, I care deeply about clarity and craft in everything I do.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Education --> 
+<section id="education" class="mb-5">
+  <div style = "line-height: 2px">
+    <p class="text-center mb-4" style = "font-size: 20px"; style="font-weight: 400">WHAT I HAVE STUDIED SO FAR</p>
+    <h1 style="font-weight: 800" class="text-center mb-4 py-0">Education</h1>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">
+            <img src="images/bits.png" alt="BITS Goa" width="28" class="me-2 mb-1">
+          B.E. in Mechanical Engineering</h5>
+          <p class="card-text mb-1">Birla Institute of Technology and Science, Goa</p>
+          <small>2021 – 2025</small>
+        </div>
+      </div>  
+
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">
+            <img src="images/gvn.png" alt="GVN - The Global School" width="28" class="me-2 mb-1">
+            Senior Secondary School (12th Standard)</h5>
+          <p class="card-text mb-1">GVN - The Global School</p>
+          <small>2019 – 2021</small> <br>
+          <small>Grade: 93%</small>
+        </div>
+      </div>
+      
+       <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">
+            <img src="images/dps.png" alt="DPS Kolar Road" width="28" class="me-2 mb-1">
+            Secondary School (10th Standard)</h5>
+          <p class="card-text mb-1">Delhi Public School, Kolar Road, Bhopal</p>
+          <small>2014 – 2019</small> <br>
+          <small>Grade: 92%</small>
+        </div>
+      </div> 
+
+      <!-- Add more education blocks here if needed -->
+      <!-- Example:
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">High School</h5>
+          <p class="card-text mb-1">Delhi Public School</p>
+          <small class="text-muted">2019 – 2021</small>
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+</section>
+
+
+<!--Work --> 
+<section id="work" class="mb-5">
+  <div style = "line-height: 2px">
+    <p class="text-center mb-4" style = "font-size: 20px"; style="font-weight: 400">MY PROFESSIONAL JOURNEY</p>
+    <h1 style="font-weight: 800" class="text-center mb-4 py-0">Work Experience</h1>
+  </div>
+  <div class="row">
+      <!-- Left Column: Company Tabs -->
+      <div class="col-md-4">
+        <div class="list-group" id="work-tab" role="tablist">
+          <button class="list-group-item list-group-item-action active" data-bs-toggle="list" data-bs-target="#nitttr" type="button" role="tab" style="font-size: 20px;" style="font-weight: 600;">Student Researcher <br>National Institute of Technical Teachers Training and Research, Bhopal</button>
+          <button class="list-group-item list-group-item-action" data-bs-toggle="list" data-bs-target="#worldquant" type="button" role="tab" style="font-size: 20px;" style="font-weight: 600;"> Research Consultant <br> WorldQuant LLP</button>
+          <button class="list-group-item list-group-item-action" data-bs-toggle="list" data-bs-target="#ircs" type="button" role="tab" style="font-size: 20px;" style="font-weight: 600;">Finance Intern <br>Indian Red Cross Society(IRCS)</button>
+        </div>
+      </div>
+
+      <!-- Right Column: Work Details -->
+      <div class="col-md-8">
+        <div class="tab-content">
+          
+          <!-- NITTTR -->
+          <div class="tab-pane fade show active" id="nitttr" role="tabpanel">
+            <div class="card bg-dark text-light p-4">
+              <h4>Student Researcher — NITTTR Bhopal
+                <img src="images/nitttr.png" alt="NITTTR" width="28" class="me-2 mb-1">
+              </h4>
+              <p style="color: #FFD7C2">Jan 2025 – Present · Bhopal, India</p>
+              <ul>
+              <li>Designed and developed a Unity-based 3D modeling tool enabling real-time Boolean operations (union, subtract, intersect) using LibCSG.</li>
+              <li>Implemented object spawning, selection, movement, rotation, scaling, and mirroring along X/Y/Z axes for intuitive editing.</li>
+              <li>Added support for grouping and multi-shape operations (2–4 objects), allowing compound CSG workflows.</li>
+              <li>Built a custom UI for seamless object control, undo functionality, and dropdown-based interaction system.</li>
+              <li>Optimized object mesh handling and ensured stable geometric output through runtime mesh conversions.</li>
+              <li>Presented as Final Semester Thesis with detailed report, technical presentation, and viva to a 3-professor evaluation panel.</li>
+
+  
+              </ul>
+            </div>
+          </div>
+          
+          <!-- WorldQuant -->
+          <div class="tab-pane fade" id="worldquant" role="tabpanel">
+            <div class="card bg-dark text-light p-4">
+              <h4>Research Consultant — WorldQuant LLP
+                <img src="images/worldquant.png" alt="WorldQuant" width="28" class="me-2 mb-1">
+              </h4>
+              <p style="color: #FFD7C2">Jan 2024 – Present · Remote</p>
+              <ul>
+                <li>Developed and submitted over 100 predictive alphas using WorldQuant’s BRAIN platform, applying quantitative techniques including time-series transforms, ranking, and statistical normalization.</li>
+                <li>Actively participated in multiple alpha research competitions, achieving top-tier rankings and deepening practical understanding of financial market inefficiencies.</li>
+                <li>Refined expertise in using WorldQuant’s proprietary operators like ts_rank, delay, delta, correlation, and decay_linear to model complex market behaviors.</li>
+                <li>Consistently optimized alpha submissions based on backtest performance, correlation, and turnover, aligning with WorldQuant’s multi-factor model selection criteria.</li>
+                <li>Collaborated with a global research community through forums and discussions on BRAIN, enhancing both technical knowledge and understanding of diverse market perspectives.</li>
+                <li>Engaged as an independent research consultant on a contract basis, compensated per alpha performance—demonstrating a self-directed, results-oriented work ethic with no fixed hourly commitment.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- IRCS -->
+          <div class="tab-pane fade " id="ircs" role="tabpanel">
+            <div class="card bg-dark text-light p-4">
+              <h4>Finance Intern — Indian Red Cross Society
+                <img src="images/ircs.png" alt="Indian Red Cross Society" width="28" class="me-2 mb-1">
+              </h4>
+              <p style="color: #FFD7C2">June 2023 – July 2023 · Bhopal, India</p>
+              <ul>
+                <li>CSR Proposal Development: Drafted and structured a compelling Corporate Social Responsibility (CSR) partnership proposal for corporate donors, aligning IRCS initiatives with potential CSR objectives of private organizations.</li>
+                <li>Digital Infrastructure Development: Contributed to the development and user experience design of the IRCS website and mobile application, enhancing accessibility to services, donation workflows, and volunteer registration.</li>
+                <li>Patient Registration System Automation: Designed and implemented an online patient register, streamlining data entry and automating workflows—resulting in faster patient identification and improved record management.</li>
+                <li>Tech-Driven Operational Improvements: Proposed and integrated technology solutions to modernize administrative tasks, improve patient tracking, and create scalable frameworks for future digital transformation.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Skills -->  
+<section id="skills" class="py-5">
+  <div class="text-center mb-4">
+    <p style="font-size: 20px; font-weight: 400;">TECHNICAL PROFICIENCIES</p>
+    <h1 style="font-weight: 800;">Skills</h1>
+  </div>
+
+  <div class="skills-honeycomb">
+  <!-- Example card: FRONT = skill, BACK = usage -->
+
+  <div class="row-hex offset">
+  <div class="hex-card">
+    <div class="flip-inner">
+      <div class="flip-front"><div class="card-content">
+         <img src="images/python.png" alt="Python" width="100" class="text-center">
+      </div></div>
+      <div class="flip-back" style="line-height: 20px;"><div class="card-content">Built alpha signals, automation scripts, and logic prototypes using Python's rich ML and data libraries.</div></div>
+    </div>
+  </div>
+
+  <div class="hex-card">
+    <div class="flip-inner">
+    <div class="flip-front"><div class="card-content">
+      <img src="images/react.png" alt="React" width="100" class="text-center">
+    </div></div>
+    <div class="flip-back" style="line-height: 20px;"><div class="card-content">Used to build modular, interactive UIs including this portfolio and project dashboards.</div></div>
+    </div>
+  </div>
+
+  <div class="hex-card">
+    <div class="flip-inner">
+      <div class="flip-front"><div class="card-content">
+        <img src="images/three.js.png" alt="Three.js" width="100" class="text-center">
+      </div></div>
+      <div class="flip-back" style="line-height: 20px;"><div class="card-content">Integrated interactive 3D models in-browser using Three.js and GLTF loaders.</div></div>
+    </div>
+  </div>
+
+  <div class="hex-card">
+    <div class="flip-inner">
+      <div class="flip-front"><div class="card-content">
+        <img src="images/unity.png" alt="Unity" width="100" class="text-center">
+      </div></div>
+      <div class="flip-back" style="line-height: 20px;"><div class="card-content">Developed a full-fledged 3D modeling app using Unity and LibCSG for real-time Boolean operations.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Row Change-->
+
+<div class="row-hex offset">
+  <div class="hex-card">
+    <div class="flip-inner">
+      <div class="flip-front"><div class="card-content">
+        <img src="images/github.png" alt="Github" width="100" class="text-center">
+      </div></div>
+      <div class="flip-back" style="line-height: 20px;"><div class="card-content">Version-controlled all personal & collaborative projects with proper documentation & commits.</div></div>      
+    </div>
+  </div>
+
+  <div class="hex-card">
+    <div class="flip-inner">
+      <div class="flip-front"><div class="card-content">
+        <img src="images/csharp.png" alt="c#" width="100" class="text-center">
+      </div></div>
+      <div class="flip-back" style="line-height: 20px;"><div class="card-content">Implemented object control, UI systems, and CSG logic for Unity-based tools using C# scripting.</div></div>
+    </div>
+  </div>
+
+  <div class="hex-card">
+    <div class="flip-inner">
+      <div class="flip-front"><div class="card-content">
+        <img src="images/numpy.png" alt="numpy" width="100" class="text-center">
+      </div></div>
+      <div class="flip-back" style="line-height: 20px;"><div class="card-content">Implemented object control, UI systems, and CSG logic for Unity-based tools using C# scripting.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Row Change-->
+
+<div class="row-hex offset">
+  <div class="hex-card">
+    <div class="flip-inner">
+      <div class="flip-front"><div class="card-content">
+        <img src="images/pandas.png" alt="pandas" width="100" class="text-center">
+      </div></div>
+      <div class="flip-back" style="line-height: 20px;"><div class="card-content">Implemented object control, UI systems, and CSG logic for Unity-based tools using C# scripting.</div></div>
+    </div>
+  </div>
+
+  <div class="hex-card">
+    <div class="flip-inner">
+      <div class="flip-front"><div class="card-content">
+        <img src="images/mysql.png" alt="MySQL" width="100" class="text-center">
+      </div></div>
+      <div class="flip-back" style="line-height: 20px;"><div class="card-content">Implemented object control, UI systems, and CSG logic for Unity-based tools using C# scripting.</div></div>
+    </div>
+  </div>
+</div>
+</div>
+
+</section>
+
+
+<!-- Projects --> 
+<section id="projects" class="mb-5">
+  <div style = "line-height: 2px">
+    <p class="text-center mb-4" style = "font-size: 20px"; style="font-weight: 400">INNOVATIVE CREATIONS</p>
+    <h1 class="text-center mb-4" style="font-weight: 800">Projects</h1>
+  </div>
+    
+<div class="projects-wrapper">
+  <div class="projects-scroll-container" id="projectCarousel">
+  <!-- Project 1 -->
+  <div class="project-card">
+    <div class="project-inner">
+      <div class="project-front">
+        <img src="images/portfolio.png" alt="Portfolio Website" class="text-center">
+        <h5>Portfolio Website</h5>
+      </div>
+      <div class="project-back">
+        <p>Responsive portfolio built with HTML, CSS & Bootstrap. Emphasizes design, interactivity, and storytelling.</p>
+        <p><strong>Tech:</strong> HTML + CSS + Bootstrap</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-inner">
+      <div class="project-front">
+        <img src="images/unityproject.png" alt="Unity Modelling Application">
+        <h5>Unity 3D Modelling Tool</h5>
+      </div>
+      <div class="project-back">
+        <p>A custom 3D object modeling app built using LibCSG for real-time boolean operations, with support for mirroring, undo, object grouping, and advanced mesh logic.</p>
+        <p><strong>Tech:</strong> Unity + C# + LibCSG</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-inner">
+      <div class="project-front">
+        <img src="images/expensetracker.png" alt="Personal Finance Tracking" width="150px">
+        <h5>Personal Finance Dashboard</h5>
+      </div>
+      <div class="project-back">
+        <p>A single-page app that visualizes expenses, income trends, and savings using dynamic charts. Integrates authentication, CRUD operations, and Google Sheets export.</p>
+        <p><strong>Tech:</strong> React + Chart.js + Firebase</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-inner">
+      <div class="project-front">
+        <img src="images/nlp.png" alt="AI based Resume Analyser">
+        <h5>AI-Powered Resume Analyser</h5>
+      </div>
+      <div class="project-back">
+        <p>Upload a resume → AI parses it → Highlights skill gaps, matches to jobs, and suggests improvements using NLP libraries like spaCy and scikit-learn.</p>
+        <p><strong>Tech:</strong> Python (NLP) + Flask + Bootstrap</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-inner">
+      <div class="project-front">
+        <img src="images/ARbusinesscard.png" alt="AR Business Card">
+        <h5>AR Business Card App</h5>
+      </div>
+      <div class="project-back">
+        <p>Point your phone at a business card → a 3D profile model pops up with portfolio links, a mini voice intro, and buttons to contact/download CV.</p>
+        <p><strong>Tech:</strong> Unity + AR + Android</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="carousel-dots" id="carouselDots"></div>
+  <!-- Add more .project-card blocks here -->
+</div>
+
+
+</section>
+
+
+<!-- Contact --> 
+<section id="contact" class="mb-5">
+ <div class="contact-section-wrapper">
+  <!-- Left: Contact Card -->
+  <div class="contact-left" style="line-height: 2px">
+    <form id="contactForm" class="contact-card">
+    <p class="ms-5" style="font-size: 20px; font-weight: 400">GET IN TOUCH</p>
+    <h1 class="ms-5" style="font-weight: 800">Contact</h1>
+    
+      <div class="form-group">
+        <input type="text" name="name" required placeholder=" " />
+        <label>Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" required placeholder=" " />
+        <label>Email</label>
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="4" required placeholder=" "></textarea>
+        <label>Message</label>
+      </div>
+      <button type="submit">Send</button>
+      <p id="responseMessage"></p>
+    </form>
+  </div>
+
+  <!-- Right: GIF -->
+  <div class="contact-right">
+    <img src="images/contactside.gif" alt="Contact" class="contact-gif">
+  </div>
+</div>
+</section>
+
+
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <p>&copy; 2025 Kartikeya</p>
+</footer>
+
+<div class="social-bar">
+<a href="https://github.com/arctic-snake" target="_blank"><i class="fab fa-github" style="color: beige"></i></a>
+<a href="https://www.linkedin.com/in/kartikeya--gupta/" target="_blank" style="color: beige"><i class="fab fa-linkedin"></i></a>
+<a href="mailto:kartikeyagupta2003@gmail.com" style="color: beige"><i class="fas fa-envelope"></i></a>
+</div>
+
+
+<!--Script for Words appearing in Hero Section-->
+<script>
+  const line1 = "Aspiring developer learning by building.";
+  const line2 = "Exploring web development, AI, and the joy of solving problems.";
+  let i = 0;
+  let j = 0;
+
+  function typeIntro1() {
+    if (i < line1.length) {
+      document.querySelector(".Intro1").textContent += line1.charAt(i);
+      i++;
+      setTimeout(typeIntro1, 50);
+    } else {
+      // After first line is done, start the second
+      setTimeout(typeIntro2, 300); // optional pause before second line
+    }
+  }
+
+  function typeIntro2() {
+    if (j < line2.length) {
+      document.querySelector(".Intro2").textContent += line2.charAt(j);
+      j++;
+      setTimeout(typeIntro2, 50);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", typeIntro1);
+</script>
+
+<!--Project Scroller Script-->
+<script>
+  const carousel = document.getElementById("projectCarousel");
+  const dotsContainer = document.getElementById("carouselDots");
+  const cards = Array.from(carousel.querySelectorAll(".project-card"));
+  const visibleCount = 3;
+  let startIndex = 0;
+
+  function updateCarousel() {
+    // Infinite looping: wrap around using modulo
+    const total = cards.length;
+    const displayCards = [
+      cards[(startIndex + total) % total],
+      cards[(startIndex + 1 + total) % total],
+      cards[(startIndex + 2 + total) % total]
+    ];
+
+    // Remove all active classes
+    cards.forEach(card => {
+      card.classList.remove("active-center", "active-side");
+    });
+
+    // Apply active-center to middle, active-side to sides
+    displayCards.forEach((card, i) => {
+      if (i === 1) card.classList.add("active-center");
+      else card.classList.add("active-side");
+    });
+
+    // Reorder DOM for visibility
+    carousel.innerHTML = "";
+    displayCards.forEach(card => carousel.appendChild(card));
+
+    // Update dots (center dot always active)
+    const dotBtns = dotsContainer.querySelectorAll("button");
+    dotBtns.forEach((dot, i) => dot.classList.toggle("active", i === 1));
+  }
+
+  function createDots() {
+    dotsContainer.innerHTML = "";
+    for (let i = 0; i < 3; i++) {
+      const dot = document.createElement("button");
+      dot.addEventListener("click", () => {
+        // Left or right navigation
+        if (i === 0) startIndex--;
+        else if (i === 2) startIndex++;
+        else return;
+
+        updateCarousel();
+      });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  createDots();
+  updateCarousel();
+
+  setInterval(() => {
+    startIndex++;
+    updateCarousel();
+  }, 9000);
+
+function showNextProject() {
+  startIndex++;
+  updateCarousel();
+}
+
+function showPrevProject() {
+  startIndex--;
+  updateCarousel();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key.toLowerCase() === 'd') {
+      showNextProject();
+    } else if (e.key === 'ArrowLeft' || e.key.toLowerCase() === 'a') {
+      showPrevProject();
+    }
+  });
+});
+
+
+</script>
+
+<!--Contact Form Info Script-->
+<script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycby3Pfx2Z4CcaPk6fG213x8JR5vBp51i5XSqUXXrvvl0zXMaia-BxSTSZ53OoJotLNic/exec";
+  const form = document.getElementById("contactForm");
+  const responseMessage = document.getElementById("responseMessage");
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    fetch(scriptURL, {
+      method: "POST",
+      body: formData
+    })
+    .then(response => {
+      responseMessage.innerHTML = "Message sent successfully!";
+      form.reset();
+    })
+    .catch(error => {
+      responseMessage.innerHTML = "Failed to send message.";
+    });
+  });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
