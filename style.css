@@ -544,4 +544,128 @@ section {
   margin-right: auto;
 }
 
+/* -------------------------
+   Responsive Enhancements
+------------------------- */
+
+/* For tablets (≤ 992px) */
+@media (max-width: 992px) {
+  #hero {
+    padding-left: 5vw;
+    text-align: center;
+    align-items: center;
+  }
+
+  .skills-honeycomb .row-hex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-card {
+    flex: 0 0 80%;
+    height: auto;
+  }
+
+  .project-front img {
+    width: 60px;
+  }
+}
+
+/* For medium screens and below (≤ 768px) */
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  .container, section {
+    padding: 20px 15px;
+  }
+
+  .row-hex {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #hero {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .projects-scroll-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .project-card.active-side,
+  .project-card.active-center {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .contact-section-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-left, .contact-right {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-gif {
+    max-width: 300px;
+    max-height: 200px;
+    margin: 0 auto;
+  }
+
+  .social-bar {
+    display: none;
+  }
+}
+
+/* For phones (≤ 576px) */
+@media (max-width: 576px) {
+  body {
+    font-size: 15px;
+  }
+
+  .flip-front, .flip-back {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .hex-card {
+    width: 180px;
+    height: 160px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .project-front img {
+    width: 50px;
+  }
+
+  .contact-card {
+    padding: 25px 15px;
+  }
+
+  .carousel-dots {
+    gap: 6px;
+  }
+}
+
 
